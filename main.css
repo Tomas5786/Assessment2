@@ -81,6 +81,7 @@ section {margin-top: 10px;}
 .our-team .post {display: block; font-size: 10px; font-weight: 900; text-transform: uppercase;}
 .our-team .description {padding: 20px; background: #FFF8F0; border-radius: 20px; font-size: 12px; color: #666; line-height: 30px; margin-bottom: 0; min-height: 200px;}
 .our-team
+.devider {border-radius: 6px solid #E4572E;}
 @media only screen and (max-width: 990px){
   .our-team {margin-bottom: 30px;}
 }
