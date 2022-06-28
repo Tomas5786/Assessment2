@@ -75,12 +75,12 @@ section {margin-top: 10px;}
 .our-team .email {list-style: none; padding: 0px; margin: 0px; position: absolute; top: 50px; left: 20px; transition: all 0.3s ease-out 0s;}
 .our-team .email li a {width: 30px; height: 30px; line-height: 30px; border-radius: 50px; background: #2C423F; font-size: 14px; color: #FFF8F0; text-align: center; margin-bottom: 5px; transform: scale(0); transition: all 0.2s ease 0s;}
 .our-team:hover .email li a {transform: scale(1);}
-.out-team:hover .email li a:hover {background: #2C423F;}
+.out-team:hover .email li: a:hover {background: #2C423F;}
 .our-team .team-content {padding: 15px 15px 20px; background: #2C423F; border-radius: 40px 10px; margin-top: -20px; color: #FFF8F0;}
 .our-team .title {font-size: 20px; font-weight: bold; margin: 10px 0 5px 0;}
 .our-team .post {display: block; font-size: 10px; font-weight: 900; text-transform: uppercase;}
 .our-team .description {padding: 20px; background: #FFF8F0; border-radius: 20px; font-size: 12px; color: #666; line-height: 30px; margin-bottom: 0;}
-
+.our-team
 @media only screen and (max-width: 990px){
   .our-team {margin-bottom: 30px;}
 }
@@ -88,3 +88,8 @@ section {margin-top: 10px;}
   .our-team .pic {width: 150px; height: 150px;}
   .our-team .email {top: 20px;}
 }
+
+/* Tooltips */
+.tooltip {position: relative; display: inline-block; border-bottom: 1px dotted back;}
+.tooltip .tooltiptext {visibility: hidden; width: 120px; background: black; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px}
+.tooltip:hover .tooltiptext {visibility: visible;}
