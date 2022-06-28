@@ -88,8 +88,3 @@ section {margin-top: 10px;}
   .our-team .pic {width: 150px; height: 150px;}
   .our-team .email {top: 20px;}
 }
-
-/* Tooltips */
-.tooltip {position: relative; display: inline-block; border-bottom: 1px dotted back;}
-.tooltip .tooltiptext {visibility: hidden; width: 120px; background: black; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px}
-.tooltip:hover .tooltiptext {visibility: visible;}
