@@ -30,12 +30,13 @@ section {margin-top: 10px;}
 .nav-links li:hover a {color: #FFF8F0; transition: 0.3s;}
 .nav-links li:hover ~ .active {display:block;}
 .nav-links li:nth-child(1):hover ~ .active {top:2%;}
-.nav-links li:nth-child(2):hover ~ .active {top:16%}
-.nav-links li:nth-child(3):hover ~ .active {top:30%}
-.nav-links li:nth-child(4):hover ~ .active {top:45%}
-.nav-links li:nth-child(5):hover ~ .active {top:59%}
-.nav-links li:nth-child(6):hover ~ .active {top:73%}
-.nav-links li:nth-child(7):hover ~ .active {top:88%}
+.nav-links li:nth-child(2):hover ~ .active {top:14%}
+.nav-links li:nth-child(3):hover ~ .active {top:26%}
+.nav-links li:nth-child(4):hover ~ .active {top:39%}
+.nav-links li:nth-child(5):hover ~ .active {top:51%}
+.nav-links li:nth-child(6):hover ~ .active {top:64%}
+.nav-links li:nth-child(7):hover ~ .active {top:76%}
+.nav-links li:nth-child(8):hover ~ .active {top:89%}
 .logo-icon {display: none; width: 45px;}
 
 @media only screen and (max-width: 600px){
@@ -67,7 +68,7 @@ section {margin-top: 10px;}
 }
 
 /* Meet The Team */
-.container {display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; margin: 0 -15px; padding-top: 10px;}
+.container {display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; margin: 0 -15px; padding-top: 20px;}
 .our-team {flex: 1; margin: 0 10px;}
 .our-team {text-align: center; position: relative;}
 .our-team .pic {width: 200px; height: 200px; border-radius: 50%; border: 8px solid #2C423F; margin: 0 auto; overflow: hidden;}
@@ -92,5 +93,13 @@ section {margin-top: 10px;}
 
 /* Tooltips */
 .tooltip {position: relative; display: inline-block; border-bottom: 1px dotted back;}
-.tooltip .tooltiptext {visibility: hidden; width: 120px; background: black; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px;}
+.tooltip .tooltiptext {visibility: hidden; width: 120px; background: #2C423F; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px;}
 .tooltip:hover .tooltiptext {visibility: visible;}
+
+/* It Technologies */
+.technologies h2 {font-size: 15px; line-height: 30px;}
+.technologies span {border-bottom: 1.5px solid #E4572E;}
+
+/* Top Image */
+.background {position: relative; top: 0; left: 0; width: 100%; height: 250px;}
+.logoimage {position: absolute; top: 60px; left: 40%; transform: translate(-50% 50%); width: 600px;}
