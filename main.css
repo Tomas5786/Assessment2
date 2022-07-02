@@ -107,8 +107,9 @@ section {margin-top: 10px;}
 /* Team Personality */
 .teampersonality h2 {font-size: 15px; line-height: 30px;}
 .teampersonality span {border-bottom: 1.5px solid #E4572E;}
-.personalityCard {max-width: 150px; margin: auto; text-align: center; display: inline-block; margin-left: 25px;}
+.personalityCard {max-width: 150px; margin: auto; text-align: center; display: inline-block; margin-left: 100px; margin-bottom: 25px; align-items: center;}
 .teampersonality img {width: 150px; height: 150px;}
+.spacing {margin-top: 25px;}
 
 
 /* Progress Bars */
