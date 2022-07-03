@@ -30,13 +30,14 @@ section {margin-top: 10px;}
 .nav-links li:hover a {color: #FFF8F0; transition: 0.3s;}
 .nav-links li:hover ~ .active {display:block;}
 .nav-links li:nth-child(1):hover ~ .active {top:2%;}
-.nav-links li:nth-child(2):hover ~ .active {top:14%}
-.nav-links li:nth-child(3):hover ~ .active {top:26%}
-.nav-links li:nth-child(4):hover ~ .active {top:39%}
-.nav-links li:nth-child(5):hover ~ .active {top:51%}
-.nav-links li:nth-child(6):hover ~ .active {top:64%}
-.nav-links li:nth-child(7):hover ~ .active {top:76%}
-.nav-links li:nth-child(8):hover ~ .active {top:89%}
+.nav-links li:nth-child(2):hover ~ .active {top:12%}
+.nav-links li:nth-child(3):hover ~ .active {top:24%}
+.nav-links li:nth-child(4):hover ~ .active {top:35%}
+.nav-links li:nth-child(5):hover ~ .active {top:46%}
+.nav-links li:nth-child(6):hover ~ .active {top:57%}
+.nav-links li:nth-child(7):hover ~ .active {top:68%}
+.nav-links li:nth-child(8):hover ~ .active {top:79%}
+.nav-links li:nth-child(9):hover ~ .active {top:90%}
 .logo-icon {display: none; width: 45px;}
 
 @media only screen and (max-width: 600px){
@@ -136,3 +137,12 @@ progress.judpro::-webkit-progress-bar {background-color: #DFB2F4;}
 /*AssertiveTurbulent*/
 progress.asstub::-moz-progress-bar {background-color: #F49097;}
 progress.asstub::-webkit-progress-bar {background-color: #F49097;}
+
+/* Team Meetings */
+.meetings h1 {margin-top: 25px;}
+.tl-links {list-style: none; position: relative;}
+.tl-links {margin-top: 10px;}
+.tl-links p {display: inline;}
+.tl-links li {display: inline; padding: 5px 8px;}
+.tl-links li a {text-decoration: none; list-style: none; align-items: center;}
+.tl-links a:hover {color: #E4572E;}
