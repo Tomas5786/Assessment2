@@ -99,7 +99,7 @@ section {margin-top: 10px;}
 .tooltip:hover .tooltiptext {visibility: visible;}
 
 /* It Technologies */
-.technologies h2 {font-size: 15px; line-height: 30px;}
+.technologies h2 {font-size: 20px; line-height: 30px;}
 .technologies span {border-bottom: 1.5px solid #E4572E;}
 
 /* Top Image */
@@ -107,7 +107,7 @@ section {margin-top: 10px;}
 .logoimage {position: absolute; top: 60px; left: 40%; transform: translate(-50% 50%); width: 600px;}
 
 /* Team Personality */
-.teampersonality h2 {font-size: 15px; line-height: 30px;}
+.teampersonality h2 {font-size: 20px; line-height: 30px;}
 .teampersonality span {border-bottom: 1.5px solid #E4572E;}
 .personalityCard {max-width: 150px; margin: auto; text-align: center; display: inline-block; margin-left: 100px; margin-bottom: 25px; align-items: center;}
 .teampersonality img {width: 150px; height: 150px;}
@@ -153,3 +153,9 @@ progress.asstub::-webkit-progress-bar {background-color: #F49097;}
 .referencerow {content: ""; display: flex; clear: both;}
 .aReference {font-size: 18px;}
 .ref {display: none;}
+
+/* Project Idea */
+.Ideas h2 {font-size: 20px; line-height: 30px;}
+.Ideas span {border-bottom: 1.5px solid #E4572E;}
+.list {margin-left: 20px;}
+.partition {margin-left: 20px;}
