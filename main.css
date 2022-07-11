@@ -97,6 +97,9 @@ section {margin-top: 10px;}
 .tooltip {position: relative; display: inline-block; border-bottom: 1px dotted back;}
 .tooltip .tooltiptext {visibility: hidden; width: 120px; background: #2C423F; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px;}
 .tooltip:hover .tooltiptext {visibility: visible;}
+.tooltipref .tooltiptextref {visibility: hidden; width: 250px; background: #2C423F; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px;}
+.tooltipref {position: relative; display: inline-block; border-bottom: 1px dotted back;}
+.tooltipref:hover .tooltiptextref {visibility: visible;}
 
 /* It Technologies */
 .technologies h2 {font-size: 20px; line-height: 30px;}
@@ -148,14 +151,11 @@ progress.asstub::-webkit-progress-bar {background-color: #F49097;}
 .tl-links li a {text-decoration: none; list-style: none; align-items: center;}
 .tl-links a:hover {color: #E4572E;}
 
-/* References */
-.referencecolumn {float: left; width: 33.33%; padding: 10px; margin: 5px;}
-.referencerow {content: ""; display: flex; clear: both;}
-.aReference {font-size: 18px;}
-.ref {display: none;}
-
 /* Project Idea */
 .Ideas h2 {font-size: 20px; line-height: 30px;}
 .Ideas span {border-bottom: 1.5px solid #E4572E;}
 .list {margin-left: 20px;}
 .partition {margin-left: 20px;}
+
+/*References*/
+.reference li {text-decoration: none; list-style: none;}
