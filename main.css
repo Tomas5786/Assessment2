@@ -163,6 +163,17 @@ progress.asstub::-webkit-progress-bar {background-color: #F49097;}
 .fa-check { color: green;}
 .fa-remove { color: red;}
 
+/* Industry Data */
+.aData h2 {font-size: 20px; line-height: 30px;}
+.aData span {border-bottom: 1.5px solid #E4572E;}
+.aData img {
+	width: auto;
+	height: auto;
+	;
+}
+.aData li {text-decoration: none; margin-left: 20px;}
+.spacing {margin-top: 25px;}
+
 
 /* Project Idea */
 .Ideas h2 {font-size: 20px; line-height: 30px;}
