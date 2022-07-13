@@ -29,14 +29,16 @@ section {margin-top: 10px;}
 .active {background: #E4572E; width: 100%; height: 47px; position: absolute; left: 0; top: 2%; z-index: -1; border-radius: 6px; display: none; transition: top 0.5s;}
 .nav-links li:hover a {color: #FFF8F0; transition: 0.3s;}
 .nav-links li:hover ~ .active {display:block;}
-.nav-links li:nth-child(1):hover ~ .active {top:2%;}
-.nav-links li:nth-child(2):hover ~ .active {top:14%}
-.nav-links li:nth-child(3):hover ~ .active {top:26%}
-.nav-links li:nth-child(4):hover ~ .active {top:39%}
-.nav-links li:nth-child(5):hover ~ .active {top:51%}
-.nav-links li:nth-child(6):hover ~ .active {top:64%}
-.nav-links li:nth-child(7):hover ~ .active {top:76%}
-.nav-links li:nth-child(8):hover ~ .active {top:89%}
+.nav-links li:nth-child(1):hover ~ .active {top:1%;}
+.nav-links li:nth-child(2):hover ~ .active {top:12%}
+.nav-links li:nth-child(3):hover ~ .active {top:21%}
+.nav-links li:nth-child(4):hover ~ .active {top:31%}
+.nav-links li:nth-child(5):hover ~ .active {top:41%}
+.nav-links li:nth-child(6):hover ~ .active {top:51%}
+.nav-links li:nth-child(7):hover ~ .active {top:61%}
+.nav-links li:nth-child(8):hover ~ .active {top:71%}
+.nav-links li:nth-child(9):hover ~ .active {top:81%}
+.nav-links li:nth-child(10):hover ~ .active {top:91%}
 .logo-icon {display: none; width: 45px;}
 
 @media only screen and (max-width: 600px){
@@ -95,11 +97,78 @@ section {margin-top: 10px;}
 .tooltip {position: relative; display: inline-block; border-bottom: 1px dotted back;}
 .tooltip .tooltiptext {visibility: hidden; width: 120px; background: #2C423F; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px;}
 .tooltip:hover .tooltiptext {visibility: visible;}
+.tooltipref .tooltiptextref {visibility: hidden; width: 250px; background: #2C423F; color: white; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; top: -5px; left: 30px;}
+.tooltipref {position: relative; display: inline-block; border-bottom: 1px dotted back;}
+.tooltipref:hover .tooltiptextref {visibility: visible;}
 
 /* It Technologies */
-.technologies h2 {font-size: 15px; line-height: 30px;}
+.technologies h2 {font-size: 20px; line-height: 30px;}
 .technologies span {border-bottom: 1.5px solid #E4572E;}
 
 /* Top Image */
 .background {position: relative; top: 0; left: 0; width: 100%; height: 250px; filter: brightness(50%);}
 .logoimage {position: absolute; top: 60px; left: 40%; transform: translate(-50% 50%); width: 600px;}
+
+/* Team Personality */
+.teampersonality h2 {font-size: 20px; line-height: 30px;}
+.teampersonality span {border-bottom: 1.5px solid #E4572E;}
+.personalityCard {max-width: 150px; margin: auto; text-align: center; display: inline-block; margin-left: 100px; margin-bottom: 25px; align-items: center;}
+.teampersonality img {width: 150px; height: 150px;}
+.spacing {margin-top: 25px;}
+
+
+/* Progress Bars */
+progress {-webkit-appearence none; appearance: none; -moz-appearance: none; border: none;}
+progress {width: 100%; display: block; magin: 2em auto; padding: 3px; border: 0 none; background: black; border-radius: 14px; color: #75B9BE;}
+progress.rtl {direction: rtl;}
+
+/*Extraverted/Introverted*/
+progress.exin::-moz-progress-bar {background-color: #75B9BE;}
+progress.exin::-webkit-progress-bar {background-color: #75B9BE;}
+
+/*Intuitive/Observant*/
+progress.intobs::-moz-progress-bar {background-color: #E9D758;}
+progress.intobs::-webkit-progress-bar {background-color: #E9D758;}
+
+/*FeelThink*/
+progress.feethi::-moz-progress-bar {background-color: #72C09D;}
+progress.feethi::-webkit-progress-bar {background-color: #72C09D;}
+
+/*JudgingProspection*/
+progress.judpro::-moz-progress-bar {background-color: #DFB2F4;}
+progress.judpro::-webkit-progress-bar {background-color: #DFB2F4;}
+
+/*AssertiveTurbulent*/
+progress.asstub::-moz-progress-bar {background-color: #F49097;}
+progress.asstub::-webkit-progress-bar {background-color: #F49097;}
+
+/* Team Meetings */
+.meetings h1 {margin-top: 25px;}
+.tl-links {list-style: none; position: relative;}
+.tl-links {margin-top: 10px;}
+.tl-links p {display: inline;}
+.tl-links li {display: inline; padding: 5px 8px;}
+.tl-links li a {text-decoration: none; list-style: none; align-items: center;}
+.tl-links a:hover {color: #E4572E;}
+
+/* Ideal Jobs */
+.aJobs h2 {font-size: 20px; line-height: 30px;}
+.aJobs span {border-bottom: 1.5px solid #E4572E;}
+.aJobs img {width: 150px; height: 150px;}
+.spacing {margin-top: 25px;}
+.aJobs table { border-collapse: collapse;  border-spacing: 0;  width: 100%;  border: 1px solid #ddd; }
+.aJobs th, td {  text-align: center; padding: 8px;font-size: 16px }
+.aJobs th:first-child, td:first-child { text-align: left; }
+.aJobs tr:nth-child(even) {  background-color: #f2f2f2  }
+.fa-check { color: green;}
+.fa-remove { color: red;}
+
+
+/* Project Idea */
+.Ideas h2 {font-size: 20px; line-height: 30px;}
+.Ideas span {border-bottom: 1.5px solid #E4572E;}
+.list {margin-left: 20px;}
+.partition {margin-left: 20px;}
+
+/*References*/
+.reference li {text-decoration: none; list-style: none;}
