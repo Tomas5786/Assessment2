@@ -151,6 +151,30 @@ progress.asstub::-webkit-progress-bar {background-color: #F49097;}
 .tl-links li a {text-decoration: none; list-style: none; align-items: center;}
 .tl-links a:hover {color: #E4572E;}
 
+/* Ideal Jobs */
+.aJobs h2 {font-size: 20px; line-height: 30px;}
+.aJobs span {border-bottom: 1.5px solid #E4572E;}
+.aJobs img {width: 150px; height: 150px;}
+.spacing {margin-top: 25px;}
+.aJobs table { border-collapse: collapse;  border-spacing: 0;  width: 100%;  border: 1px solid #ddd; }
+.aJobs th, td {  text-align: center; padding: 8px;font-size: 16px }
+.aJobs th:first-child, td:first-child { text-align: left; }
+.aJobs tr:nth-child(even) {  background-color: #f2f2f2  }
+.fa-check { color: green;}
+.fa-remove { color: red;}
+
+/* Industry Data */
+.aData h2 {font-size: 20px; line-height: 30px;}
+.aData span {border-bottom: 1.5px solid #E4572E;}
+.aData img {
+	width: auto;
+	height: auto;
+	;
+}
+.aData li {text-decoration: none; margin-left: 20px;}
+.spacing {margin-top: 25px;}
+
+
 /* Project Idea */
 .Ideas h2 {font-size: 20px; line-height: 30px;}
 .Ideas span {border-bottom: 1.5px solid #E4572E;}
