@@ -185,3 +185,6 @@ progress.asstub::-webkit-progress-bar {background-color: #F49097;}
 
 /*References*/
 .reference li {text-decoration: none; list-style: none; margin-left: 20px; padding: 8px;}
+
+/*Robots*/
+.Robots li {text-decoration: none; margin-left: 20px;}
