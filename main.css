@@ -104,6 +104,8 @@ section {margin-top: 10px;}
 /* It Technologies */
 .technologies h2 {font-size: 20px; line-height: 30px;}
 .technologies span {border-bottom: 1.5px solid #E4572E;}
+.ailist {margin-left: 20px}
+.robotslist {margin-left: 20px}
 
 /* Top Image */
 .background {position: relative; top: 0; left: 0; width: 100%; height: 250px; filter: brightness(50%);}
