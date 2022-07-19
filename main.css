@@ -180,7 +180,8 @@ progress.asstub::-webkit-progress-bar {background-color: #F49097;}
 /* Project Idea */
 .Ideas h2 {font-size: 20px; line-height: 30px;}
 .Ideas span {border-bottom: 1.5px solid #E4572E;}
-.list {margin-left: 20px;}
+.list li {margin-left: 20px; }
+.numberList li {list-style: normal; margin-left: 20px; }
 .partition {margin-left: 20px;}
 
 /*References*/

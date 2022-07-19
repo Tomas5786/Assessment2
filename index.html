@@ -1130,26 +1130,66 @@ Answers and solutions. </p>
             <h2 class="spacing"><span>Description</span></h2>
             <p>A small and removable E-Ink display attached to the rear and front windscreens or embedded on the number plates attachment area of the vehicle that displays information to others via image or text.</p>
             <h2 class="spacing"><span>Tools\Technologies</span></h2>
-            <div class="list">
-              <ul>
-                <li>2 x Colour E-Ink Displays with a minimum measurement of 145mm by 145mm</li>
-                <li>2 x Screen mounts (removable)</li>
-                <li>2 x Number plate mount (embedded)</li>
-                <li>Raspberry Pi 4. Minimum 1GB Ram, running Raspberry PiOS or other Linux distribution</li>
-                <li>256 GB Micro SD Card
-                  <ul class="partition">
-                    <li>32 GB - OS Partition</li>
-                    <li>220 GB - Storage Partition</li>
-                    <li>4 GB - Boot and other partitions</li>
-                  </ul>
-                </li>
-                <li>Python with CircuitPython Support</li>
-                <li>USB-C to Car Power Supply cable</li>
-                <li>Android Studio with Flutter plugin</li>
-                <li>Web Server, Apache or equivalant</li>
-                <li>NAS or hosted storage</li>
-              </ul>
-            </div>
+            <h3>Project Management Tools - App</h3>
+              <p>The team will use Agile methodology, breaking the software development cycle of the app into smaller chunks. This enables the software development team to compartmentalise and work to their strengths with small interactive tasks, while getting continuous feedback leading to a better working environment.  “These benefits include higher satisfaction, a feeling of effectiveness, increased quality and transparency, increased autonomy and happiness, and earlier detection of defects.” (Laanti, M., Salo, et al, p 4. Results)
+              </p><br>
+                <p>The phone app will be managed, designed, and documented using Microsoft DevOps. Using Task Boards in DevOPs configured to the Agile methodology, sprints will be created and user stories outlining each piece of requirement. This will keep clear and concise requirements and allow scalability for team size.
+                </p>
+                <p>The communication between the team will be through Microsoft Teams, allowing for remote working environment in the current climate. It gives the team remote file storage, ability to run presentations internally and with stakeholders. And is future proof with the organisational growth connecting people between cities, states and even countries.
+                </p><br>
+              <h3>Software Development Tools - App Development</h3>
+                <p>The app will be built as a using Visual Studio tools for Xamarin and written in C#. This is the most efficient and well covered development option that lets native apps be developed with .Net. The app will consist of the one code base written in C# for multiple platforms and this allows testing and deployment for all apps to be done from the one location.
+                </p><br>
+
+                <p>It will be published to the app stores using Azure App Service Mobile Apps. A Continuous Integration deployment plan will be designed and implemented using Microsoft DevOps to fulfill this.
+This will allow for faster deployment of updates, assurance of quality of release with automated unit testing resulting in an overall streamlined development process.
+
+</p><br>
+                <p>User login will use Microsoft Identity, allows for the user to authenticate with their existing Microsoft, Facebook or Google accounts. This takes a large chunk of development time away from developing our own user management tool and covers all industry standards like password hashing and multi factor authentication.
+                </p><br>
+                <p>Data storage: the app will need to store user information as well as plates and connected devices to be used by the app. Initially the app data will be stored in the cloud using Azure DevOps SQL data as it is cost effective and will meet country security requirements. Data storage will be split across different countries to meet local regulations and allow for better performance of data access when it is localised.
+The design of the product using DDD will allow for the data storage options to be changed should feasibility, cost or availability become an issue.
+
+</p><br>
+              <h3>Project Management Tools – EInk Display Hardware</h3>
+              <p>The hardware component of the E-Ink display will follow a similar Agile methodology, ‘Agile systems engineering exploits the role of momentum to allow innovation in the (hardware) development process while allowing risk interactions to be managed in a disciplined manner’ (Philip M. Huang, Abstract).
+              </p><br>
+
+              <p>The hardware requires a separate team to manage the hardware aspects as there are distinct skill differences required for the hardware. However, the team will still use Microsoft Teams to communicate and Dev Ops for tasks as all tasks and communication can be shared between the hardware and software development teams. These teams will need to be in constant communication and keeping everything to the same technology will avoid confusion and reduce a breakdown in communication.
+              </p><br>
+              <h3>Software Development Tools - Hardware Development</h3>
+                <p>The E-Ink Display will be controlled by an Arduino device as the central controlling device of the hardware that has an additional Bluetooth and LCD Display modules. Arduino hardware and software is open source which allows us to use the hardware as a foundation and modifications to the hardware can be made without additional licencing or third-party costs.
+                </p><br>
+
+                <p>Hardware design and building will be done in KiCad which is a free CAD (Computer Aided Design) software tool that will develop the E-Ink Displays hardware schematics, PCBs and layouts for manufacturing all in the one software. Using this tool will enable the hardware development from design, schematic testing, PCB design and then manufacturing as it can link to different PCB manufacturers enabling us to source the most cost effective and fast manufacturers. It also enables us to change manufactures should it be required.
+                </p><br>
+
+                <p>Visual Studio code will be used to develop the hardware code for the Arduino Device. This uses a C++ like language that has open libraries readily available for Bluetooth connectivity and LCD Display hardware components. Developing in Visual Studio code will integrate with the Arduino IDE, DevOps and with GitHub allowing the code to be used by the hardware to be tasked and tracked through DevOps Task Boards as well as being backed up to the cloud and version controlled through GitHub.
+                </p><br>
+              <h3>Hardware Required</h3>
+              <div class="list">
+                <ul>
+                  <li>2x Colour E-Ink Display measuring around 145mm by 145mm minimum. (7inch TFT/ LCD Display NX8048K070 – Nextion 7.0” Enhanced Series HMI Display)</li>
+                  <li>2 x Screen mounts for Front and Back of car (Removable)</li>
+                  <li>2 x Number plate mount (embedded)</li>
+                  <li>Arduino Nano (nano-v3-0-atmega328p)</li>
+                  <li>Bluetooth Module (HC-06) – Peripheral only</li>
+                  <li>Mini USB to car power supply cable.</li>
+                  <li>Plastic Enclosure to protect the screen, hardware and allow for easy attachment or removal of mounts</li>
+                </ul>
+              </div>
+              <h3>Hardware Manufacturing</h3>
+              <p>After the initial prototypes, manufacturing of the hardware will consist of 4 stages:</p><br>
+              <div class="numberList">
+                <ul>
+                  <li>PCB Manufacturing: PCB will come fully assembled with all components surface mounted using SMT. It will be manufactured through www.jlcpcb.com where our schematics made in KiCad can be uploaded with the selected components from this manufacturer. This is a leading global PCB manufacture that can produce high quality PCBs fully assembled with all components for a low cost.</li>
+                  <li>Enclosure manufacturing: The PCB and components such as the screen will need to be enclosed in a case for protection, safety and to prevent tapering. EInk will use a JLCPCB to design and produce 3d printed enclosers based on our PCB and hardware requirements. After the initial release if demand has increased, injection moulded plastic versions of the enclosures will be created. <br>
+                  Injection moulding has a high initial cost ($3000 USD+) for the design and creation of a mould (typically made of machined steel), so this isn’t feasible immediately but will considered and a covered cost if demand requires more than a 500-1000 units P/A to be produced. </li>
+                  <li>Hardware Assembly: PCB’s, LCD Displays and Enclosures will be assembled at a in house manufacturing facility initially where the software will also be applied to the hardware. Once demand increases the hardware assembly can be outsourced to the PCB and Enclosure manufacturer as this is only an option with a large supply request. </li>
+                  <li>Software updating: After receiving the PCB’s and enclosures from the manufacturer, the software will be imaged to the hardware via USB per device in house initially. After demand increases, so will the manipulating scale and this software imaging will be done during the PCB manufacturing stage. This comes at a higher cost that won’t be considered until a high demand is met that can cover these costs. </li>
+                </ul>
+              </div>
+
             <h2 class="spacing"><span>Skills</span></h2>
             <p>We would need skills in Python, Linux (Raspberry Pi OS or Ubuntu), general car electronics and the ability to create an Android/iOS application using Android Studio with the Flutter plugin. We will also need the skills to setup a cloud storage site if we are to host it locally, by using a NAS, or be able to integrate the app with Sharepoint.</p>
             <h2 class="spacing"><span>Outcome</span></h2>
@@ -1208,6 +1248,6 @@ Answers and solutions. </p>
         <hr class="devider" style="margin-top: 10px; margin-bottom: 10px">
         </section>
       </div>
-    </div> 
+    </div>
   </body>
 </html>
